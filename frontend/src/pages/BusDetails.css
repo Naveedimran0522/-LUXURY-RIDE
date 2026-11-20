@@ -1,0 +1,435 @@
+
+/* Bismillah-ir-Rahman-ir-Raheem ❤️ */
+/* LUXRIDE — BUS DETAILS PAGE */
+
+.bus-details-page {
+  min-height: 100vh;
+  padding: 30px 20px 60px;
+  background: #faf8f2;
+}
+
+.bus-details-header {
+  max-width: 1150px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.back-button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #263c30;
+  background: #fff;
+  border: 1px solid #e8e5df;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.bus-details-header h1 {
+  margin: 0;
+  color: #263c30;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.bus-details-header p {
+  margin: 5px 0 0;
+  color: #7b827c;
+  font-size: 13px;
+}
+
+.bus-details-container {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: start;
+  gap: 24px;
+}
+
+.bus-info-card,
+.seat-selection-section,
+.booking-summary-card {
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e9e5dc;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(38, 60, 48, 0.04);
+}
+
+.bus-info-card {
+  grid-column: 1 / -1;
+}
+
+.bus-info-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bus-icon-box {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #263c30;
+  background: #edf1eb;
+  border-radius: 15px;
+}
+
+.bus-main-info {
+  flex: 1;
+}
+
+.bus-main-info h2 {
+  margin: 0 0 5px;
+  color: #263c30;
+  font-size: 19px;
+}
+
+.bus-main-info p {
+  margin: 0;
+  color: #858b85;
+  font-size: 13px;
+}
+
+.bus-type-badge {
+  padding: 8px 12px;
+  color: #82683e;
+  background: #f7f1e6;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.bus-route {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 30px 0;
+  padding: 20px;
+  background: #faf9f5;
+  border-radius: 14px;
+}
+
+.route-location {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #405b48;
+}
+
+.route-location span {
+  color: #929991;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.route-location h3 {
+  margin: 5px 0 0;
+  color: #263c30;
+  font-size: 20px;
+}
+
+.route-line {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 170px;
+  border-top: 2px dashed #b99a65;
+}
+
+.route-line span {
+  display: none;
+}
+
+.bus-schedule {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #405b48;
+}
+
+.schedule-item span {
+  display: block;
+  margin-bottom: 5px;
+  color: #888e88;
+  font-size: 11px;
+}
+
+.schedule-item strong {
+  color: #263c30;
+  font-size: 14px;
+}
+
+.bus-duration {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  color: #7d827c;
+  font-size: 12px;
+}
+
+.bus-amenities {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #eeeae3;
+}
+
+.bus-amenities h3 {
+  margin: 0 0 13px;
+  color: #263c30;
+  font-size: 15px;
+}
+
+.amenities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 11px;
+  color: #405b48;
+  background: #f2f5f0;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.bus-detail-fare {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 17px;
+  border-top: 1px solid #eeeae3;
+}
+
+.bus-detail-fare span {
+  color: #858b85;
+  font-size: 13px;
+}
+
+.bus-detail-fare strong {
+  color: #263c30;
+  font-size: 21px;
+}
+
+.seat-selection-section {
+  min-width: 0;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  margin: 0 0 7px;
+  color: #263c30;
+  font-size: 21px;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #858b85;
+  font-size: 13px;
+}
+
+.booking-summary-card {
+  position: sticky;
+  top: 20px;
+}
+
+.summary-heading h2 {
+  margin: 0 0 20px;
+  color: #263c30;
+  font-size: 19px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 13px 0;
+  border-bottom: 1px solid #eeeae3;
+}
+
+.summary-row span {
+  color: #828982;
+  font-size: 12px;
+}
+
+.summary-row strong {
+  max-width: 65%;
+  color: #263c30;
+  font-size: 13px;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.summary-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.summary-total span {
+  color: #263c30;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.summary-total strong {
+  color: #263c30;
+  font-size: 24px;
+}
+
+.continue-booking-button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 15px;
+  color: #fff;
+  background: #263c30;
+  border: none;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.continue-booking-button:hover:not(:disabled) {
+  background: #405b48;
+  transform: translateY(-2px);
+}
+
+.continue-booking-button:disabled {
+  background: #aab2aa;
+  cursor: not-allowed;
+}
+
+.booking-secure-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin: 15px 0 0;
+  color: #858b85;
+  font-size: 11px;
+}
+
+.bus-details-loading,
+.bus-details-error {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #263c30;
+  text-align: center;
+}
+
+.loading-spinner {
+  animation: bus-spin 1s linear infinite;
+}
+
+@keyframes bus-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bus-details-error h2,
+.bus-details-error p {
+  margin: 0;
+}
+
+.bus-details-error button {
+  padding: 12px 22px;
+  color: #fff;
+  background: #263c30;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .bus-details-container {
+    grid-template-columns: 1fr;
+  }
+
+  .bus-info-card {
+    grid-column: auto;
+  }
+
+  .booking-summary-card {
+    position: static;
+  }
+}
+
+@media (max-width: 550px) {
+  .bus-details-page {
+    padding: 20px 12px 40px;
+  }
+
+  .bus-info-card,
+  .seat-selection-section,
+  .booking-summary-card {
+    padding: 16px;
+  }
+
+  .bus-details-header h1 {
+    font-size: 22px;
+  }
+
+  .bus-info-top {
+    flex-wrap: wrap;
+  }
+
+  .bus-type-badge {
+    margin-left: 72px;
+  }
+
+  .bus-route {
+    gap: 10px;
+    padding: 14px 10px;
+  }
+
+  .route-location {
+    gap: 6px;
+  }
+
+  .route-location h3 {
+    font-size: 15px;
+  }
+
+  .route-line {
+    min-width: 20px;
+  }
+
+  .bus-schedule {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

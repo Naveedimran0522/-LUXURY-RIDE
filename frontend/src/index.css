@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #f8f5ed;
+  background: #0b1511;
+
+  --lux-bg: #0b1511;
+  --lux-surface: #13221a;
+  --lux-green: #263f31;
+  --lux-gold: #c5a66b;
+  --lux-cream: #f8f5ed;
+  --lux-muted: #a9b1a9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--lux-bg);
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--lux-gold);
+  color: var(--lux-bg);
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.lux-container {
+  width: min(1440px, 92%);
+  margin-inline: auto;
+}
+
+.lux-gold {
+  color: var(--lux-gold);
+}
+
+.lux-button {
+  background: var(--lux-gold);
+  color: #111a13;
+  border-radius: 4px;
+  padding: 14px 24px;
+  font-weight: 700;
+  transition: .25s ease;
+}
+
+.lux-button:hover {
+  background: #e0c48c;
+  transform: translateY(-2px);
+}

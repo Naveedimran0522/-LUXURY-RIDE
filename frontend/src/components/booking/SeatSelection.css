@@ -1,0 +1,294 @@
+
+/* Bismillah-ir-Rahman-ir-Raheem ❤️ */
+/* LUXRIDE — SEAT SELECTION DESIGN */
+
+.lux-seat-wrapper {
+  width: 100%;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #e8e5df;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(25, 38, 31, 0.06);
+}
+
+.seat-top-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.seat-small-label {
+  color: #b99a65;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.seat-top-info h3 {
+  margin: 7px 0;
+  color: #263c30;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.seat-top-info p {
+  margin: 0;
+  color: #7c827d;
+  font-size: 13px;
+}
+
+.seat-selected-count {
+  min-width: 65px;
+  padding: 10px;
+  color: #fff;
+  background: #263c30;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.seat-selected-count span {
+  display: block;
+  margin-top: 3px;
+  color: #e6d3ad;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.seat-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 15px 0;
+  border-top: 1px solid #eeeae3;
+  border-bottom: 1px solid #eeeae3;
+}
+
+.seat-legend > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #59645d;
+  font-size: 12px;
+}
+
+.legend-seat {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.available-legend {
+  background: #fff;
+  border: 1.5px solid #829482;
+}
+
+.selected-legend {
+  background: #263c30;
+}
+
+.booked-legend {
+  background: #e6e6e6;
+  border: 1px solid #d3d3d3;
+}
+
+.bus-seat-board {
+  width: 100%;
+  max-width: 490px;
+  margin: 25px auto;
+  padding: 20px;
+  background: #faf9f5;
+  border: 1px solid #e8e5dc;
+  border-radius: 20px;
+}
+
+.driver-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #d5d1c7;
+}
+
+.driver-area > span {
+  color: #89918a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.driver-icon {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #263c30;
+  background: #e9eee8;
+  border-radius: 12px;
+}
+
+.seat-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.seat-row {
+  display: grid;
+  align-items: center;
+  gap: 9px;
+}
+
+.seat-grid.layout-three .seat-row {
+  grid-template-columns: 1fr 1fr 22px 1fr;
+}
+
+.seat-grid.layout-four .seat-row {
+  grid-template-columns: 1fr 1fr 22px 1fr 1fr;
+}
+
+.seat-aisle {
+  min-width: 22px;
+}
+
+.lux-seat {
+  min-width: 0;
+  min-height: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #405b48;
+  background: #fff;
+  border: 1.5px solid #829482;
+  border-radius: 10px 10px 7px 7px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.lux-seat span {
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.lux-seat:hover:not(:disabled) {
+  border-color: #b99a65;
+  background: #f7f1e6;
+  transform: translateY(-2px);
+}
+
+.lux-seat.seat-selected {
+  color: #fff;
+  background: #263c30;
+  border-color: #263c30;
+}
+
+.lux-seat.seat-booked {
+  color: #aaa;
+  background: #e8e8e8;
+  border-color: #dedede;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.bus-back-area {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px dashed #d5d1c7;
+  color: #89918a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.seat-selection-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 18px;
+  border-top: 1px solid #eeeae3;
+}
+
+.seat-selection-price {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.seat-selection-price span {
+  color: #7c827d;
+  font-size: 12px;
+}
+
+.seat-selection-price strong {
+  overflow-wrap: anywhere;
+  color: #263c30;
+  font-size: 15px;
+}
+
+.seat-empty {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  color: #956d31;
+  background: #fbf7ed;
+  border: 1px solid #eee1c5;
+  border-radius: 12px;
+}
+
+.seat-empty p {
+  margin: 0;
+  font-size: 13px;
+}
+
+@media (max-width: 520px) {
+  .lux-seat-wrapper {
+    padding: 16px;
+  }
+
+  .seat-top-info h3 {
+    font-size: 19px;
+  }
+
+  .bus-seat-board {
+    padding: 13px;
+  }
+
+  .seat-grid.layout-three .seat-row {
+    grid-template-columns: 1fr 1fr 15px 1fr;
+  }
+
+  .seat-grid.layout-four .seat-row {
+    grid-template-columns: 1fr 1fr 15px 1fr 1fr;
+  }
+
+  .seat-aisle {
+    min-width: 15px;
+  }
+
+  .lux-seat {
+    min-height: 53px;
+  }
+
+  .lux-seat span {
+    font-size: 10px;
+  }
+
+  .seat-legend {
+    gap: 10px;
+  }
+
+  .seat-legend > div {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,291 @@
+
+/* LUXRIDE — PASSENGER DETAILS STYLES */
+
+.passenger-page {
+  min-height: 100vh;
+  padding: 35px 18px 60px;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.passenger-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.passenger-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.passenger-back {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #e4e8ef;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+}
+
+.passenger-header h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.passenger-header p {
+  margin: 5px 0 0;
+  color: #788397;
+  font-size: 13px;
+}
+
+.passenger-trip-card,
+.passenger-form {
+  padding: 24px;
+  border: 1px solid #e8edf4;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 8px 28px rgba(25, 42, 70, 0.04);
+}
+
+.passenger-trip-card {
+  margin-bottom: 22px;
+}
+
+.passenger-trip-card span {
+  color: #8792a5;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.passenger-trip-card h2 {
+  margin: 6px 0 18px;
+  font-size: 19px;
+}
+
+.passenger-trip-route {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #f5f8ff;
+}
+
+.passenger-trip-route strong {
+  font-size: 14px;
+}
+
+.passenger-trip-route span {
+  color: #315fbb;
+  font-size: 19px;
+}
+
+.passenger-trip-card > p {
+  margin: 15px 0;
+  color: #65738a;
+  font-size: 13px;
+}
+
+.passenger-selected-seats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #edf0f5;
+}
+
+.passenger-selected-seats strong {
+  color: #2458ad;
+  font-size: 13px;
+}
+
+.passenger-form-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  color: #315fbb;
+}
+
+.passenger-form-heading h2 {
+  margin: 0;
+  color: #172033;
+  font-size: 19px;
+}
+
+.passenger-form-heading p {
+  margin: 5px 0 0;
+  color: #788397;
+  font-size: 12px;
+}
+
+.passenger-input-card {
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 1px solid #e8edf4;
+  border-radius: 14px;
+  background: #fcfdff;
+}
+
+.passenger-card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.passenger-card-heading h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.passenger-card-heading span {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #edf3ff;
+  color: #315fbb;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.passenger-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  margin-bottom: 15px;
+}
+
+.passenger-field label {
+  color: #46536a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.passenger-field input,
+.passenger-field select {
+  width: 100%;
+  min-height: 45px;
+  box-sizing: border-box;
+  padding: 11px 13px;
+  border: 1px solid #dfe5ee;
+  border-radius: 9px;
+  outline: none;
+  background: white;
+  color: #172033;
+  font: inherit;
+  font-size: 13px;
+}
+
+.passenger-field input:focus,
+.passenger-field select:focus {
+  border-color: #315fbb;
+  box-shadow: 0 0 0 3px rgba(49, 95, 187, 0.1);
+}
+
+.passenger-fields-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.passenger-error-message {
+  margin: 15px 0;
+  padding: 12px 14px;
+  border-radius: 9px;
+  background: #fff0f0;
+  color: #bd3434;
+  font-size: 13px;
+}
+
+.passenger-submit-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+  color: #65738a;
+  font-size: 12px;
+}
+
+.passenger-submit-info svg {
+  flex-shrink: 0;
+  color: #26804c;
+}
+
+.reserve-button {
+  width: 100%;
+  min-height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: none;
+  border-radius: 11px;
+  background: #2458ad;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reserve-button:hover:not(:disabled) {
+  background: #173f82;
+}
+
+.reserve-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.passenger-spinner {
+  animation: passenger-spin 1s linear infinite;
+}
+
+.passenger-error {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 25px;
+  border-radius: 15px;
+  background: white;
+  text-align: center;
+}
+
+.passenger-error button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 9px;
+  background: #2458ad;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes passenger-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 550px) {
+  .passenger-page {
+    padding: 22px 12px 40px;
+  }
+
+  .passenger-trip-card,
+  .passenger-form {
+    padding: 17px;
+  }
+
+  .passenger-fields-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .passenger-header h1 {
+    font-size: 21px;
+  }
+}

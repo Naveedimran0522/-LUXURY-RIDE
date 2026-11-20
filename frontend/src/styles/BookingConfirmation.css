@@ -1,0 +1,210 @@
+
+/* LUXRIDE — BOOKING CONFIRMATION STYLES */
+
+.confirmation-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 45px 16px;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.confirmation-card {
+  width: 100%;
+  max-width: 570px;
+  padding: 32px;
+  border: 1px solid #e8edf4;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 10px 35px rgba(25, 42, 70, 0.06);
+}
+
+.confirmation-success-icon {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0 18px;
+  color: #24965a;
+}
+
+.confirmation-card > h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 27px;
+}
+
+.confirmation-subtitle {
+  margin: 9px 0 25px;
+  color: #788397;
+  text-align: center;
+  font-size: 13px;
+}
+
+.confirmation-reference {
+  padding: 18px;
+  border: 1px dashed #a9bfdf;
+  border-radius: 13px;
+  background: #f5f8ff;
+  text-align: center;
+}
+
+.confirmation-reference span {
+  display: block;
+  color: #788397;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.confirmation-reference strong {
+  display: block;
+  margin-top: 9px;
+  color: #2458ad;
+  font-size: 24px;
+  letter-spacing: 2px;
+  overflow-wrap: anywhere;
+}
+
+.confirmation-details {
+  margin-top: 26px;
+}
+
+.confirmation-details h2 {
+  margin: 0 0 17px;
+  font-size: 17px;
+}
+
+.confirmation-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 13px 0;
+  border-bottom: 1px solid #edf0f5;
+  font-size: 13px;
+}
+
+.confirmation-row > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #788397;
+}
+
+.confirmation-row > strong {
+  max-width: 58%;
+  color: #172033;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.confirmation-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #f5f8ff;
+  font-weight: 700;
+}
+
+.confirmation-total strong {
+  color: #2458ad;
+  font-size: 24px;
+}
+
+.confirmation-status {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 18px;
+  padding: 14px;
+  border-radius: 11px;
+  background: #fff8e9;
+  color: #956b19;
+}
+
+.confirmation-status div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.confirmation-status strong {
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.confirmation-status span {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.confirmation-payment-note {
+  margin: 17px 0;
+  color: #788397;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.confirmation-primary-button,
+.confirmation-secondary-button {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 11px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.confirmation-primary-button {
+  border: none;
+  background: #2458ad;
+  color: white;
+}
+
+.confirmation-primary-button:hover {
+  background: #173f82;
+}
+
+.confirmation-secondary-button {
+  border: 1px solid #dfe5ee;
+  background: white;
+  color: #172033;
+}
+
+.confirmation-card > button:not(.confirmation-primary-button):not(.confirmation-secondary-button) {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  background: #2458ad;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .confirmation-page {
+    padding: 22px 12px;
+  }
+
+  .confirmation-card {
+    padding: 20px 16px;
+  }
+
+  .confirmation-card > h1 {
+    font-size: 23px;
+  }
+
+  .confirmation-reference strong {
+    font-size: 20px;
+  }
+
+  .confirmation-row {
+    font-size: 12px;
+  }
+}
